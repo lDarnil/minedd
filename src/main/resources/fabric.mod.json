@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "random_events",
+	"version": "${version}",
+	"name": "Random Events",
+	"description": "Every 5 minutes each player receives their own random positive or negative event (30 events total).",
+	"authors": ["Random Events"],
+	"license": "CC0-1.0",
+	"icon": "assets/random_events/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.randomevents.RandomEventsMod"],
+		"client": ["com.randomevents.client.RandomEventsClient"]
+	},
+	"mixins": ["random_events.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
